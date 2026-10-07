@@ -2,12 +2,5 @@
 # megatouch-host loads the game with RTLD_NOW, so each of these must be defined
 # (usually in src/host/loader_services.cpp) before the game will start.
 # symbol | needed by
-ContinueControl::allowed() | sudoku.so
-ContinueControl::display() | sudoku.so
-Profiler::DelInstance() | sudoku.so
-Profiler::Stop(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) | sudoku.so
-Profiler::Start(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) | sudoku.so
 typeinfo for seDeleteAfterLast | sudoku.so
 typeinfo for seRunAnim | sudoku.so
-voice_ramp_volume | sudoku.so
-voice_stop | sudoku.so
