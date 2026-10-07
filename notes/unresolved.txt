@@ -2,84 +2,12 @@
 # megatouch-host loads the game with RTLD_NOW, so each of these must be defined
 # (usually in src/host/loader_services.cpp) before the game will start.
 # symbol | needed by
-Debug_Flag_Set(char const*, char const*) | sudoku.so
-ScreenIsTouched() | sudoku.so
-PlayWave(char*, unsigned short, int, int, int, bool) | sudoku.so
-WorldClass::FrameNumber(Bitmap*) | sudoku.so
-WorldClass::AnimationFrames(Bitmap*) | sudoku.so
-WorldClass::LoadBmp(char const*, int, float, int, int, bool, bool, Bitmap*) | sudoku.so
-WorldClass::DeleteBmp(Bitmap*, unsigned char) | sudoku.so
-WorldClass::LoadAdBmp(char const*, int, float, int, int, bool) | sudoku.so
-WorldClass::PlayMovie(int, unsigned long, void (*)(unsigned char), unsigned char, bool, bool, bool, bool) | sudoku.so
-system_info::SystemInfo::GetInstance() | sudoku.so
-system_info::SystemInfo::IsPlatformForce() | sudoku.so
-MegacGlobals::PopWorld() | sudoku.so
-MegacGlobals::PushWorld(char const*, char const*, bool) | sudoku.so
 ContinueControl::allowed() | sudoku.so
 ContinueControl::display() | sudoku.so
-List::Push(Group*) | sudoku.so
-List::Clear(unsigned char) | sudoku.so
-List::IsEmpty() | sudoku.so
-List::List(List*) | sudoku.so
-Books::LogCategoryPlays(xml_gameinfo::GameIds, int, int) | sudoku.so
-Books::Instance() | sudoku.so
-Group::Signal(Group::SpriteSignalType) | sudoku.so
-Group::Signal(SpriteSignal*) | sudoku.so
-Group::Message(Group::SpriteSignalType) | sudoku.so
-Group::Message(SpriteSignal*) | sudoku.so
-ListT<EventO>::UnLinkAndAdvance() | sudoku.so
-ListT<EventO>::Advance(int) | sudoku.so
-ListT<EventO>::ListT(List*) | sudoku.so
-ListT<EventO>::~ListT() | sudoku.so
-ListT<Sprite>::Set(List*) | sudoku.so
-ListT<Sprite>::Advance(int) | sudoku.so
-ListT<Sprite>::ListT(List*) | sudoku.so
-ListT<Sprite>::~ListT() | sudoku.so
-Bitmap::NextAnim() | sudoku.so
-EventO::GetType() | sudoku.so
-EventO::EventO() | sudoku.so
-EventO::~EventO() | sudoku.so
-Sprite::AssignName(char*) | sudoku.so
-Sprite::ColoredOff(unsigned long) | sudoku.so
-Sprite::AssignString(String*, unsigned long) | sudoku.so
-Sprite::ChangeString(char const*, unsigned long) | sudoku.so
-Sprite::ClicksEnabled | sudoku.so
-Sprite::EffectBalloon(int, unsigned long, unsigned long) | sudoku.so
-Sprite::DeleteAfterLast(unsigned long) | sudoku.so
-Sprite::EnableAllClicks(unsigned long) | sudoku.so
-Sprite::DisableAllClicks(unsigned long) | sudoku.so
-Sprite::CreateTextDropShadow(float, float, unsigned long, int, int, int) | sudoku.so
-Sprite::RunDiskAnimThenDelete(char const*, unsigned long, float, unsigned long, bool) | sudoku.so
-Sprite::Move(int, int, int, int, int, int, unsigned long, unsigned long, unsigned char) | sudoku.so
-Sprite::Curve(int, int, int, int, int, int, int, int, int, int, int, int, unsigned long, unsigned long, unsigned char) | sudoku.so
-Sprite::Scale(float, float, unsigned long, unsigned long, unsigned char) | sudoku.so
-Sprite::Enable(unsigned long) | sudoku.so
-Sprite::FadeIn(unsigned long, unsigned long, int, int) | sudoku.so
-Sprite::SetBmp(Bitmap*, unsigned long) | sudoku.so
-Sprite::ColorIt(int, int, int, int, int, int, int, int, int, unsigned long) | sudoku.so
-Sprite::Disable(unsigned long, bool) | sudoku.so
-Sprite::FadeOut(unsigned long, unsigned long, int, int) | sudoku.so
-Sprite::RunAnim(Bitmap*, int, int, int, unsigned long, float, unsigned long, int) | sudoku.so
-Sprite::ScaleXY(float, float, unsigned long) | sudoku.so
-Sprite::SetCord(float, float, float, unsigned long) | sudoku.so
-Sprite::SetSize(int, int) | sudoku.so
-Sprite::AddEvent(EventO*) | sudoku.so
-Sprite::SetAlpha(int, unsigned long) | sudoku.so
-Sprite::PlaySound(char*, int, unsigned long) | sudoku.so
-Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | sudoku.so
-String::ChangeColor(int, int, int, unsigned char) | sudoku.so
-String::Copy() | sudoku.so
-String::String(char const*, int, char const*, int, signed char, int, int, int, unsigned char, unsigned char, unsigned short) | sudoku.so
 Profiler::DelInstance() | sudoku.so
 Profiler::Stop(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) | sudoku.so
 Profiler::Start(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) | sudoku.so
 typeinfo for seDeleteAfterLast | sudoku.so
-typeinfo for EventO | sudoku.so
 typeinfo for seRunAnim | sudoku.so
-key | sudoku.so
-mouse_x | sudoku.so
-mouse_y | sudoku.so
-screen | sudoku.so
-show_mouse | sudoku.so
 voice_ramp_volume | sudoku.so
 voice_stop | sudoku.so
